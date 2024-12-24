@@ -10,8 +10,8 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
-const adminRoutes = require("./routes/admin");
-app.use("/api/admin", adminRoutes);
+const tasks = require("./routes/tasks");
+app.use("/api/tasks", tasks);
 
 
 
